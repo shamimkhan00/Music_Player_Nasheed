@@ -1,0 +1,15 @@
+.invert{
+    filter: invert(1); --> changes the colour 
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap; --> Allow flex items to wrap to the next line
+}
+
+flex: 0 0 50%;
+position: relative;
+position: absolute;
+
+
+justify-content: space-between; /* To push items to opposite ends */
