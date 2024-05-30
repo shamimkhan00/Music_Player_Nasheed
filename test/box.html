@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Boxes</title>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .selected {
+    background-color: #ff0000; /* Change color when selected */
+  }
+</style>
+</head>
+<body>
+
+<div class="box" onclick="selectBox(1)"></div>
+<div class="box" onclick="selectBox(2)"></div>
+<div class="box" onclick="selectBox(3)"></div>
+<div class="box" onclick="selectBox(4)"></div>
+<div class="box" onclick="selectBox(5)"></div>
+
+<script>
+  let selectedBox = null;
+
+  function selectBox(boxNumber) {
+    if (selectedBox !== null) {
+      // Remove the 'selected' class from the previously selected box
+      selectedBox.classList.remove('selected');
+    }
+
+    // Get the box element that corresponds to the clicked box
+    const box = document.querySelector('.box:nth-child(' + boxNumber + ')');
+
+    // Add the 'selected' class to the clicked box
+    box.classList.add('selected');
+
+    // Update the selectedBox variable with the currently selected box
+    selectedBox = box;
+  }
+</script>
+
+</body>
+</html>

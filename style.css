@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.container{
+    padding: 10px;
+    /* padding-top: 20px; */
+}
+.left{
+    width: 25vw;
+    margin: 5px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.logo img{
+    width: 25px;
+}
+
+.home ul li{
+    display: flex;
+    width: 20px;
+    gap: 8px;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+    
+}
+
+
+
+.home{
+    padding: 10px;
+}
+
+.library{
+    margin-top: 6px;
+    padding: 10px;
+    min-height: 75vh;
+    position: relative;
+}
+
+
+
+.lib-logo{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.lib-logo img{
+    width: 20px;
+}
+
+.lib-logo h4{
+    margin-left: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap; 
+    /* Allow flex items to wrap to the next line */
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    
+}
+
+.footer div {
+    padding: 7px;
+    
+} 
+
+.footer div a{
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+}
+
+
+
+.right{
+    width: 75vw;
+    margin: 5px;
+    position: relative;
+}
+
+.right-top{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+
+    background-color: rgb(55, 55, 55);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    max-height: 3vh;
+    
+}
+
+.nav{
+    display: flex;
+    gap: 6px;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.signup {
+    
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+    
+    text-decoration: none;
+
+    font-weight: 700;
+    color: rgb(181, 181, 181);
+
+}
+
+.signup:hover {
+    color: white; 
+    font-weight: 800;
+}
+
+.login{
+    padding: 10px;
+    margin-top: -7px;
+    padding-bottom: 25px;
+    border-radius: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+.login:hover{
+    padding: 12px;
+    padding-bottom: 25px;
+    margin: -3.9px;
+    margin-top: -7px;
+    font-weight: bold;
+}
+
+.playlist{
+    padding: 15px;
+}
+
+.cardContain{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+    max-height: 75vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* position: relative; */
+    
+}
+
+.cards{
+    /* border: 2px solid red; */
+    width: 200px;
+    padding: 5px;
+    /* background-color: rgb(55, 55, 55); */
+    max-height: 230px;
+    position: relative;
+}
+
+.cards img{
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30px;
+    /* border: 2px solid red; */
+    cursor: pointer;
+
+}
+
+.cards h3{
+    padding-left: 8%;
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.cards p{
+    padding-left: 8%;
+    width: 80%;
+    overflow: hidden;
+}
+
+
+/* #00cc66 */
+
+.play-button {
+    width: 20px; /* Set width and height to create a square container */
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Make the container circular */
+    background-color: #ffffff; /* Green background color */
+    padding: 8px; /* Add padding for spacing around the SVG */
+    position: absolute;
+    right: 20px;
+    top: 155px;
+}
+
+.green {
+    background-color: #00cc66; }
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    /* border: 2px solid red; */
+    width: 100%;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: #1e2d20;
+    /* position: relative; */
+}
+
+.bar-buttons{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.bg-grey{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.round{
+    border-radius: 9px;
+}
+
+#progress{
+    /* -webkit-appearance: none; */
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 100%;
+}
+
+
+#playPauseButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+#pauseIcon {
+    display: none;
+}
